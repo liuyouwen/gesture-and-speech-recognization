@@ -10,8 +10,8 @@ import matplotlib.image as mpimg
 import numpy as np
 def baidu_asr():
 	asr_server='http://vop.baidu.com/server_api'
-	Api_Key='ZiGDlOiZc2Q4K64wTfgRNtDSwpZKrd8C'
-	Secrect_Key='kGv5G5a04IVfQjMo5cAUjd3srGbSMKFS'
+	Api_Key='xxxx' ###use baidu voice api
+	Secrect_Key='xxxxx'  ###it's own api key
 	url = 'https://openapi.baidu.com/oauth/2.0/token?grant_type=client_credentials&client_id='+Api_Key+'&client_secret='+Secrect_Key
 	res=urllib2.urlopen(url).read().decode('utf-8')
 	data=json.loads(res)
